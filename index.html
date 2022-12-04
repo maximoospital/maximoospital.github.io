@@ -7,63 +7,173 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     </head>
-    <body style="filter: invert(100%); background: linear-gradient(90deg,#000 21px,transparent 1%) 50%,linear-gradient(#000 21px,transparent 1%) 50%,#fff;     background-attachment: fixed;
-        background-size: 22px 22px;">
-        <div class="container" style="--bs-gutter-x: 0 !important; flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    height: 100vh;">
-            <div class="row align-middle" style=" --bs-gutter-x: 0 !important;"></div>
-            <div class="row align-middle" style="    --bs-gutter-x: 0 !important;">
-                <div class="col" style="max-width:160px">
-                </div>
-                <div class="col">
-                    <div class="window">
-                        <div class="title-bar">
-                            <button aria-label="Close" class="close"></button>
-                            <h1 class="title" data-i18n-key="title">maximoospital.github.io</h1>
-                            <button aria-label="Resize" class="resize"></button>
-                        </div>
-                        <div class="details-bar" style="display: flow-root !important; padding: .4rem 2.8rem !important;">
-                            <span>home</span>
-                            <span>|</span>
-                            <span>portfolio</span>
-                            <span>|</span>
-                            <span>contact</span>
-                            <span style="float:right">CV/Resume</span>
-                        </div>
-                        <div class="window-pane" style="    overflow-y: hidden;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <h2>Hello world! <br></h2>
-                                        My name is <b>Maximo Ospital</b> <br>
-                                        I'm a junior programmer interested in videogame and web/app development.
-                                        I've mainly practiced in both <b>React</b>, <b>Flutter</b> and <b>Python</b>, and outside programming i have experience with maintaining and implementing web apps in external servers, graphic design and video editing.<br>
-                                        I'm interested in new opportunities and the experience these might bring.
+    <body style="filter: invert(100%); background: linear-gradient(90deg,#000 21px,transparent 1%) 50%,linear-gradient(#000 21px,transparent 1%) 50%,#fff; background-attachment: fixed; background-size: 22px 22px;">
+        <div id="site">
+            <div class="container" style="--bs-gutter-x: 0 !important; flex-direction: column; align-items: center; justify-content: space-between; display: flex; height: 100vh;">
+                <div class="row align-middle" style=" --bs-gutter-x: 0 !important;"></div>
+                <div class="row align-middle" style="    --bs-gutter-x: 0 !important;">
+                    <div class="col" style="max-width:160px">
+                    </div>
+                    <div class="col">
+                        <div class="window">
+                            <div class="title-bar">
+                                <button aria-label="Close" class="close"></button>
+                                <h1 class="title" data-i18n-key="title">maximoospital.github.io</h1>
+                                <button aria-label="Resize" class="resize"></button>
+                            </div>
+                            <div class="details-bar" style="display: flow-root !important; padding: .4rem 2.8rem !important;">
+                                <a href="#" id="homebtn"><span>home</span></a>
+                                <span>|</span>
+                                <a href="#" id="portfoliobtn"><span>portfolio</span></a>
+                                <span>|</span>
+                                <a href="#" id="contactbtn"><span>contact</span></a>
+                                <div style="float:right">
+                                    <span><a target="_blank" href="https://www.linkedin.com/in/maximoospital/">CV (Español)</a> </span>
+                                    <span>|</span>
+                                    <span><a target="_blank" href="https://www.linkedin.com/in/maximoospital/">Resume (English)</a> </span>
+                                </div>
+                            </div>
+                            <div class="window-pane" style="    overflow-y: hidden;">
+                                <div class="container" id="home">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <h2>Hello world! <br></h2>
+                                            My name is <b>Maximo Ospital</b>, <br>
+                                            I'm a <b>junior frontend programmer</b> interested in videogames and web/app development.
+                                            I've mainly practiced in <b>React</b>, <b>Flutter</b> and <b>Python</b>, and outside programming i have experience with maintaining and configuring web apps, graphic design and video editing.<br>
+                                            I'm interested in new opportunities and the experience these might bring.<br>
+                                            In this website you can find some of my works and ways to contact me, but for more info (previous jobs, education, etc) you can check out my <a target="_blank" href="https://www.linkedin.com/in/maximoospital/">LinkedIn page</a> or my Resume. <br>
+                                            Also, just appreciate me playing around with Bootstrap and retro Mac aesthetics.
+                                        </div>
+                                        <div class="col-sm" style="text-align:right;">
+                                            <img src="assets/pfp2.png" class="img-fluid" alt="Responsive image" style="filter: invert(100);">
+                                            <ul style="padding-left: 1.4rem; list-style: none; margin: 0px;">
+                                                <b><li>19 years old.</li>
+                                                    <li>Buenos Aires, Argentina</li>
+                                                    <li>Computer Sciences student</li>
+                                                    <li>Open and actively looking for work</li></b>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-sm" style="text-align:right;">
-                                        <img src="assets/pfp2.png" class="img-fluid" alt="Responsive image" style="filter: invert(100);">
-                                        <ul style="    padding-left: 1.4rem; list-style: none;">
-                                            <b><li>19 years old.</li>
-                                                <li>Buenos Aires, Argentina</li>
-                                                <li>Computer Sciences student</li>
-                                                <li>Open and actively looking for work</li></b>
-                                        </ul>
+                                </div>
+                                <div class="container" id="portfolio">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <h2>My Portfolio <br></h2>
+                                            Here's some of my works, both current and previous.<br>
+                                            <div class="py-5" style="    padding-top: 1rem !important; padding-bottom: 1rem !important;">
+                                                <div class="container">
+                                                    <div class="row hidden-md-up">
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <img src="assets/convapp.jpg" class="card-img-top" alt="Responsive image" style="filter: invert(100);">
+                                                                    <h4 class="card-title">Convapp</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, Flutter</h6>
+                                                                    <p class="card-text p-y-1">A minimalist unit conversion app made in Flutter to run natively in phones (and also as a Webapp) with real-time conversion and both dark/light modes, in under 7mb.</p>
+                                                                    <a target="_blank" href="https://github.com/maximoospital/Convapp" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <img src="assets/cheatjockey.jpeg" class="card-img-top" alt="Responsive image" style="filter: invert(100);">
+                                                                    <h4 class="card-title">Cheatjockey</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, Python</h6>
+                                                                    <p class="card-text p-y-1">A simple, fast and useful portable playlist, album and track URL converter to MP3 files, made with DJs in mind, supporting Spotify, BandCamp, SoundCloud and YouTube links, plus includes ID3 metadata tags.</p>
+                                                                    <a target="_blank" href="https://github.com/maximoospital/Cheatjockey" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <img src="assets/calculapp.jpeg" class="card-img-top" alt="Responsive image" style="filter: invert(100);">
+                                                                    <h4 class="card-title">Calculapp</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, React</h6>
+                                                                    <p class="card-text p-y-1">A neumorphic calculator app made in React, with a unique look, slight animation and scientific functions, taking advantage of MathJS's functions for a minimalistic and effective modern-looking calculator.</p>
+                                                                    <a target="_blank" href="https://github.com/maximoospital/CalculApp" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><br>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <img src="assets/climapp.jpeg" class="card-img-top" alt="Responsive image" style="filter: invert(100);">
+                                                                    <h4 class="card-title">Climapp</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, React</h6>
+                                                                    <p class="card-text p-y-1">Glassmorphism-styled weather app that takes the user's geolocation to deliver an aesthetically pleasing forecast, including multiple days, corresponding backgrounds and animated icons for each weather condition possible.</p>
+                                                                    <a target="_blank" href="https://github.com/maximoospital/Climapp" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <img src="assets/lightvj.jpg" class="card-img-top" alt="Responsive image" style="filter: invert(100);">
+                                                                    <h4 class="card-title">LightVJ (W.I.P)</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, Python</h6>
+                                                                    <p class="card-text p-y-1">A lightweight and extremely minimal VJing application with a focus on video loops and possibly future support for Milkdrop and PNG overlays, making use of the QT library to deliver the fastest and most optimized VJing experience possible.</p>
+                                                                    <a target="_blank" href="https://github.com/maximoospital/LightVJ" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card">
+                                                                <div class="card-block">
+                                                                    <h4 class="card-title">Enchulapp (W.I.P)</h4>
+                                                                    <h6 class="card-subtitle text-muted">2022, Flutter</h6>
+                                                                    <p class="card-text p-y-1">A modern take on camera rentals that delivers a professional-looking interface for artists seeking to rent video equipment from pages like Argentina's known Enchulame la Camara rentals.</p>
+                                                                    <a href="#" class="card-link">Github</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="container" id="contact">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <h2>Contact me<br></h2>
+                                            If you're interested in hiring me or just want to chat about a job opportunity, i'm always open and available for work. <br> You can contact me via:
+                                            <ul>
+                                                <li><b>Mail: </b><a target="_blank" href="mailto:maximo.ospital@gmail.com?subject=%5BCONTACTO%20SITE%5D">maximo.ospital@gmail.com</a></li>
+                                                <li><b>Github: </b><a target="_blank" href="https://github.com/maximoospital">https://github.com/maximoospital</a></li>
+                                                <li><b>LinkedIn: </b><a target="_blank" href=https://www.linkedin.com/in/maximoospital/">https://www.linkedin.com/in/maximoospital/</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-bar" style="display: flow-root !important; padding: .4rem 2.8rem !important;">
+                                <div style="float:right">
+                                    <span id="watch">Loading...</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col" style="max-width:160px">
+                    </div>
                 </div>
-                <div class="col" style="max-width:160px">
-                </div>
+                <div class="row align-middle" style="--bs-gutter-x: 0 !important;"></div>
             </div>
-            <div class="row align-middle" style="--bs-gutter-x: 0 !important;"></div>
-
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <style>
+            .nobottom{
+                margin-bottom:0px !important;
+            }
+            .card{
+                display:inline-block !important;
+            }
+        </style>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

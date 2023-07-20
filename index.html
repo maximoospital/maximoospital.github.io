@@ -31,8 +31,104 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+		
     </head>
     <body style="filter: invert(100%); background: linear-gradient(90deg,#000 21px,transparent 1%) 50%,linear-gradient(#000 21px,transparent 1%) 50%,#fff; background-attachment: fixed; background-size: 22px 22px;">
+  <div id="dialog-container">
+	<style>
+    #dialog-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Darkens the background */
+      z-index: 9999;
+    }
+
+    #dialog-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #dialog-box h2 {
+      margin-top: 0;
+    }
+
+    #dialog-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #dialog-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #dialog-buttons button:first-child {
+      background: #007bff; /* Replace with your desired color */
+      color: white;
+    }
+
+    #dialog-buttons button:last-child {
+      background: #eaeaea; /* Replace with your desired color */
+    }
+	</style>
+	<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dialogContainer = document.getElementById("dialog-container");
+    const btnNewVersion = document.getElementById("btnNewVersion");
+    const btnStay = document.getElementById("btnStay");
+
+    // Function to close the dialog
+    function closeDialog() {
+      dialogContainer.style.display = "none";
+    }
+
+    // Function to show the dialog
+    function showDialog() {
+      dialogContainer.style.display = "flex";
+    }
+
+    // Event listener for the "Yes" button
+    btnNewVersion.addEventListener("click", function() {
+      // Redirect to the newer version of the website
+      window.location.href = "http://maximoospital.com.ar";
+    });
+
+    // Event listener for the "No" button
+    dialogContainer.addEventListener("click", function() {
+      // Close the dialog
+      closeDialog();
+    });
+	
+	btnStay.addEventListener("click", function() {
+      // Close the dialog
+      closeDialog();
+    });
+
+    // Show the dialog on page load
+    showDialog();
+  });
+</script>
+
+    <div id="dialog-box">
+      <h2>This site has been deprecated.</h2>
+      <p>You are visiting an older version of the website. Please visit <a href="http://maximoospital.com.ar">maximoospital.com.ar</a> for a newer version.</p>
+      <div id="dialog-buttons">
+        <button id="btnNewVersion" style="color: black;">Visit</button>
+      </div>
+    </div>
+  </div>
+
         <div id="site">
             <div class="container" style="--bs-gutter-x: 0 !important; flex-direction: column; align-items: center; justify-content: space-between; display: flex; height: 100vh;">
                 <div class="row align-middle" style=" --bs-gutter-x: 0 !important;"></div>

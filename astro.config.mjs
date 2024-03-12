@@ -4,6 +4,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({});
 
 export default defineConfig({
-  site: 'https://maximoospital.com.ar',
+  site: 'https://maximoospital.github.io',
   base: '/maximoospital.github.io',
 })

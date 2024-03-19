@@ -10,7 +10,8 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
     "dev": "astro dev --host",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -23,6 +24,8 @@
     "@astrojs/vue": "^4.0.8",
     "@unocss/reset": "^0.58.5",
     "astro": "^4.5.2",
+	"@astrojs/check": "^0.5.7",
+    "typescript": "^5.4.2"
     "marked": "^11.2.0",
     "unocss": "^0.58.5",
     "vue": "^3.4.21"

@@ -1,5 +1,5 @@
 # site
-title: Maximo Ospitale
+title: Maximo Ospital
 baseurl: "/"
 url: "http://maximoospital.github.io"
 favicon: "/assets/sample/ico.png"
@@ -7,7 +7,7 @@ g_analytics: UA-12345678-1
 
 # bio
 header: Maximo Ospital
-desc: >
+desc: |+
   hi! welcome to my website!!
   i'm a 21 year old programming student and amateur design afficionado from Argentina.
   i'm really interested in both webapp and videogame development.

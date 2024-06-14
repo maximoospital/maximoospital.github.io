@@ -16,10 +16,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px;
-}
-
 *, *:before, *:after {
   font-family: inherit;
   font-size: inherit;

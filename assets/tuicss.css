@@ -1607,6 +1607,10 @@ input[type=button] {
   color: white;
 }
 
+.sitio-logo {
+  fill: white;
+}
+
 
 .tui-screen-640-480 {
   width: 640px;

@@ -4,7 +4,6 @@ baseurl: "/"
 url: "http://maximoospital.github.io"
 favicon: "/assets/sample/ico.png"
 g_analytics: UA-12345678-1
-logo: "/assets/images/logo.svg"
 
 # bio
 header: Maximo Ospital

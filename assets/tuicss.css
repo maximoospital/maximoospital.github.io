@@ -1599,6 +1599,14 @@ input[type=button] {
   color: white;
 }
 
+.tui-404-window {
+  background-color: rgb(168, 0, 0);
+  padding: 1px;
+  position: relative;
+  box-shadow: 10px 10px black;
+  color: white;
+}
+
 
 .tui-screen-640-480 {
   width: 640px;

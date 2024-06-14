@@ -9,9 +9,10 @@ g_analytics: UA-12345678-1
 header: Maximo Ospital
 desc: |+
   hi! welcome to my website!! <br>
-  i'm a 21 year old programming student and amateur design afficionado from Argentina. <br>
-  i'm really interested in both webapp and videogame development. <br>
-  i really, really like old-looking uis, in case you couldn't tell.
+  i'm a 21 year old argentinian programming student <br>
+  i am also an amateur design and video editing afficionado. <br>
+  really interested in both webapp and videogame development. <br>
+  big fan of old-looking uis, in case you couldn't tell.
 
 # posts
 date_format: "%Y"

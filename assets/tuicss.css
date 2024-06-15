@@ -892,6 +892,9 @@ input, select, textarea {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+.tui-button:hover {
+  background-color: darkgray;
+}
 .tui-button.disabled {
   text-decoration: line-through;
 }

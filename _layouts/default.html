@@ -28,12 +28,23 @@
     </div>
     <div class="tui-statusbar">
       <ul>
-          <li><a href="#!"><span class="red-168-text">A</span>bout</a></li>
+          <li><a href="#!" data-modal="modal"><span class="red-168-text">A</span>bout</a></li>
           <span class="tui-statusbar-divider"></span>
           <li><a href="#!"><span class="red-168-text">C</span>hangelog</a></li>
       </ul>
   </div>
-  
+  <div id="modal" class="tui-modal">
+    <div class="tui-window red-168 left-align">
+        <fieldset class="tui-fieldset">
+            <legend class="red-255 yellow-255-text">Alert</legend>
+            This is an example of a modal window.
+            <br><br>
+            <div class="tui-divider"></div>
+            <br>
+            <button class="tui-button cyan-168 white-255-text tui-modal-close-button right" data-modal="modal">close</button>
+        </fieldset>
+    </div>
+</div>
   </body>
 
 </html>

@@ -1120,6 +1120,7 @@ input[type=button] {
   z-index: 9;
   display: block;
   position: fixed;
+  top: 0;
 }
 
 .tui-nav ul li {

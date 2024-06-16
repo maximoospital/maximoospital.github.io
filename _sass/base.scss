@@ -57,16 +57,20 @@ html {
   overflow-y: scroll;
 }
 
-body {
+.contenido {
   width: 100%;
   padding: 0;
   margin: 25px 0;
+}
+
+body {
   background: $color__black;
   font-family: $inconsolata;
   font-size: $font__size;
   font-weight: $font__weight;
+  padding: 0;
+  margin: 0;
 }
-
 .container {
   margin: 0 25px;
 }
@@ -76,7 +80,7 @@ body {
   .container {
     margin: 0 50px;
   }
-  body {
+  .contenido {
     margin: 50px 0 25px;
   }
 
@@ -86,7 +90,7 @@ body {
   .container {
     margin: 0 120px;
   }
-  body {
+  .contenido {
     margin: 120px 0 50px;
   }
 

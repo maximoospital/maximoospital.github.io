@@ -1138,6 +1138,10 @@ input[type=button] {
   -ms-user-select: none;
 }
 
+.tui-nav ul li a:hover {
+  background-color: rgb(0, 168, 0);
+}
+
 .tui-nav ul li:hover {
   background-color: rgb(0, 168, 0);
 }

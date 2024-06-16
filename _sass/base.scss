@@ -59,7 +59,6 @@ html {
 
 body {
   width: 100%;
-  margin: 25px 0;
   padding: 0;
   background: $color__black;
   font-family: $inconsolata;
@@ -75,20 +74,12 @@ body {
 
 // media queries
 @include media-query($on-palm) {
-  body {
-    margin: 50px 0 25px;
-  }
-
   .container {
     margin: 0 50px;
   }
 }
 
 @include media-query($on-laptop) {
-  body {
-    margin: 120px 0 50px;
-  }
-
   .container {
     margin: 0 120px;
   }

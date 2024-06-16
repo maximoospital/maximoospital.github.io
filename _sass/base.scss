@@ -61,12 +61,10 @@ body {
   width: 100%;
   padding: 0;
   margin: 25px 0;
-  background-color: $color__black;
+  background: $color__black;
   font-family: $inconsolata;
   font-size: $font__size;
   font-weight: $font__weight;
-  background-image: url("./images/bg_pattern.gif");
-  background-repeat: repeat;  
 }
 
 .container {

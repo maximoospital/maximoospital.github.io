@@ -60,12 +60,11 @@ html {
 body {
   width: 100%;
   padding: 0;
+  margin: 25px 0;
   background: $color__black;
   font-family: $inconsolata;
   font-size: $font__size;
   font-weight: $font__weight;
-  line-height: $font__line-height;
-  margin: 0;
 }
 
 .container {
@@ -78,10 +77,18 @@ body {
   .container {
     margin: 0 50px;
   }
+  body {
+    margin: 50px 0 25px;
+  }
+
 }
 
 @include media-query($on-laptop) {
   .container {
     margin: 0 120px;
   }
+  body {
+    margin: 120px 0 50px;
+  }
+
 }

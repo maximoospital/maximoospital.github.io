@@ -1119,7 +1119,7 @@ input[type=button] {
   padding: 0px 2px;
   z-index: 9;
   display: block;
-  position: sticky;
+  position: fixed;
 }
 
 .tui-nav ul li {

@@ -1624,7 +1624,6 @@ input[type=button] {
   color: white;
   display: none;
   position: absolute;
-  max-width: 500px;
   max-height: 500px;
   top: random(250) - random(250) + px;
   left: random(500) + px;

@@ -3,45 +3,66 @@
   {% include head.html %}
 
   <body>
-    <div class="container">
-      <div class="post">
-        <div class="bio__header">
-          <a href="{{ site.url }}{{ "/" | relative_url }}">
-            {{ site.header }}
-          </a>
-        </div>
-
-        <div class="post__meta">
-          <div class="post__title">{{ page.title }}</div>
-          <div class="post__date">
-            {% if site.date_format %}
-              {{ page.date | date: site.date_format }}
-            {% else %}
-              {{ page.date | date: "%b %-d, %Y" }}
-            {% endif %}
+    <nav class="tui-nav">
+      <ul>
+          <li><a href="https://maximoospital.xyz"><span class="red-168-text">H</span>ome</a></li>
+          <span class="tui-statusbar-divider"></span>
+          <li class="tui-dropdown">
+              <span class="red-168-text">M</span>enu
+              <div class="tui-dropdown-content">
+                  <ul>
+                      <li><a href="https://maximoospital.github.io/assets/cv.pdf" target="_blank"><span class="red-168-text">R</span>esume</a></li>
+                      <li><a href="mailto://mospital@frba.utn.edu.ar" target="_blank"><span class="red-168-text">E</span>mail</a></li>
+                      <li><a href="http://linkedin.com/in/maximoospital" target="_blank"><span class="red-168-text">L</span>inkedIn</a></li>
+                      <li><a href="http://github.com/maximoospital" target="_blank"><span class="red-168-text">G</span>ithub</a></li>
+                      <li><a href="http://behance.com/maximoospital" target="_blank"><span class="red-168-text">B</span>ehance</a></li>
+                  </ul>
+              </div>
+          </li>
+          <span class="tui-datetime" data-format="d/M/y H:m:s"></span>
+      </ul>
+    </nav>
+    <div class="contenido">
+      <div class="container">
+        <div class="post">
+          <div class="bio__header">
+            <a href="{{ site.url }}{{ "/" | relative_url }}">
+              {{ site.header }}
+            </a>
           </div>
-          <div class="post__cat">{{ page.category }}</div>
-        </div>
 
-        <div class="post__body">
-          {{ content }}
-        </div>
-
-        {% if site.prev-next %}
-          <div class="post__paginate">
-            {% if page.previous.url %}
-              <a class="post__paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
-            {% endif %}
-
-            {% if page.next.url %}
-              <a class="post__paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
-            {% endif %}
+          <div class="post__meta">
+            <div class="post__title">{{ page.title }}</div>
+            <div class="post__date">
+              {% if site.date_format %}
+                {{ page.date | date: site.date_format }}
+              {% else %}
+                {{ page.date | date: "%b %-d, %Y" }}
+              {% endif %}
+            </div>
+            <div class="post__cat">{{ page.category }}</div>
           </div>
-        {% endif %}
+
+          <div class="post__body">
+            {{ content }}
+          </div>
+
+          {% if site.prev-next %}
+            <div class="post__paginate">
+              {% if page.previous.url %}
+                <a class="post__paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+              {% endif %}
+
+              {% if page.next.url %}
+                <a class="post__paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+
+        {% include posts_list.html uid=page.id %}
       </div>
-
-      {% include posts_list.html uid=page.id %}
-    </div>
+      </div>
   </body>
 
 </html>

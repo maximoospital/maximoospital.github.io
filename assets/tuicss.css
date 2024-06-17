@@ -1620,7 +1620,6 @@ input[type=button] {
 .tui-image-window {
   background-color: rgb(0, 0, 168);
   padding: 1px;
-  background-color: black;
   box-shadow: 10px 10px black;
   color: white;
   display: none;
@@ -1629,7 +1628,7 @@ input[type=button] {
   max-height: 500px;
   top: random(250) - random(250) + px;
   left: random(500) + px;
-  z-index: -1;
+  z-index: 9999;
   opacity: 0;
   transition: opacity 500ms;
 }

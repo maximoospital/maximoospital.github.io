@@ -75,6 +75,5 @@ $paginate-padding: 13px;
 @include media-query($on-laptop) {
   .post {
     min-width: 500px;
-    width: 50%;
   }
 }

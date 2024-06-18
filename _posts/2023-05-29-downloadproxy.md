@@ -17,16 +17,20 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
   </p>
 </p>
 
-## Table Of Contents
+<div class="tui-window">
+    <fieldset class="tui-fieldset tui-border-double">
+    <legend>Table of Contents</legend>
+    * [About the Project](#about-the-project)
+    * [Built With](#built-with)
+    * [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Authors](#authors)
+    * [Acknowledgements](#acknowledgements)
+</fieldset>
+</div>
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## About The Project
 

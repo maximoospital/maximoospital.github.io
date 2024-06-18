@@ -17,9 +17,7 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
   </p>
 </p>
 
-<div class="tui-window">
-    <fieldset class="tui-fieldset tui-border-double">
-    <legend>Table of Contents</legend>
+## Table Of Contents
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
@@ -29,9 +27,6 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
 * [Usage](#usage)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
-
-</fieldset>
-</div>
 
 ## About The Project
 

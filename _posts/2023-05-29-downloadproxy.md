@@ -20,18 +20,6 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
 <div class="tui-window">
     <fieldset class="tui-fieldset tui-border-double">
     <legend>Table of Contents</legend>
-    <ul>
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
-</ul>
-</fieldset>
-</div>
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
@@ -41,6 +29,9 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
 * [Usage](#usage)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
+
+</fieldset>
+</div>
 
 ## About The Project
 

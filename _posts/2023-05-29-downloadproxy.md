@@ -30,7 +30,7 @@ img: https://raw.githubusercontent.com/maximoospital/download-proxy/master/image
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](https://raw.githubusercontent.com/maximoospital/download-proxy/master/images/screenshot.png)
 
 This is a solution to a (highly specific) problem i've had with NuxtJS v2, this being trying to get the server to serve me an external server's files as a download, while avoiding the CORS hijinks you'd run into with most solutions.
 

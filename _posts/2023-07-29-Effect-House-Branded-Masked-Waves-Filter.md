@@ -9,7 +9,7 @@ img: https://github.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter/r
 <br/>
 <p align="center">
   <a href="https://github.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter">
-    <img src="images/icon.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter/main/images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Branded Masked Waves Filter Template
@@ -17,7 +17,6 @@ img: https://github.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter/r
 
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/maximoospital/Effect-House-Branded-Masked-Waves-Filter?color=dark-green) ![Forks](https://img.shields.io/github/forks/maximoospital/Effect-House-Branded-Masked-Waves-Filter?style=social) ![Stargazers](https://img.shields.io/github/stars/maximoospital/Effect-House-Branded-Masked-Waves-Filter?style=social) ![Issues](https://img.shields.io/github/issues/maximoospital/Effect-House-Branded-Masked-Waves-Filter) ![License](https://img.shields.io/github/license/maximoospital/Effect-House-Branded-Masked-Waves-Filter) 
 
 ## Table Of Contents
 
@@ -32,7 +31,7 @@ img: https://github.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter/r
 
 ## About The Project
 
-![Screen Shot](images/demo.gif)
+![Screen Shot](https://raw.githubusercontent.com/maximoospital/Effect-House-Branded-Masked-Waves-Filter/main/images/demo.gif)
 
 A simple template for a branded masked waves filter made in TikTok's Effect House. Includes overlay logos, a mask for the waves effect, and an animated overlay featuring a footer and a logo, both with transitions.
 

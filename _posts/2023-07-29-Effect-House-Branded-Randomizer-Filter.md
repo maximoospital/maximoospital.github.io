@@ -9,7 +9,7 @@ img: https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter/raw
 <br/>
 <p align="center">
   <a href="https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter">
-    <img src="images/icon.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter/raw/main/images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Branded Randomizer Filter Template
@@ -17,7 +17,6 @@ img: https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter/raw
 
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/maximoospital/Effect-House-Branded-Randomizer-Filter?color=dark-green) ![Forks](https://img.shields.io/github/forks/maximoospital/Effect-House-Branded-Randomizer-Filter?style=social) ![Stargazers](https://img.shields.io/github/stars/maximoospital/Effect-House-Branded-Randomizer-Filter?style=social) ![Issues](https://img.shields.io/github/issues/maximoospital/Effect-House-Branded-Randomizer-Filter) ![License](https://img.shields.io/github/license/maximoospital/Effect-House-Branded-Randomizer-Filter) 
 
 ## Table Of Contents
 
@@ -32,7 +31,7 @@ img: https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter/raw
 
 ## About The Project
 
-![Screen Shot](images/demo.gif)
+![Screen Shot](https://github.com/maximoospital/Effect-House-Branded-Randomizer-Filter/raw/main/images/demo.gif)
 
 A simple template for a branded randomizer filter made in TikTok's Effect House. Includes custom background, logos, multiple carrousel choices and a secondary image fade-in.
 

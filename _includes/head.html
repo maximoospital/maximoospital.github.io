@@ -11,6 +11,36 @@
   <link rel="icon" href="{{ site.favicon | relative_url }}" />
   {% endif %}
 
+  {% if page.title %}
+  <meta name="title" content="{{ page.title | escape }}" />
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="twitter:title" content="{{ page.title | escape }}" />
+  <meta name="description" content="{{ site.title | escape }}" />
+  <meta property="og:description" content="{{ site.title | escape }}" />
+  <meta property="twitter:description" content="{{ site.title | escape }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.image | absolute_url }}" />
+  <meta property="twitter:image" content="{{ page.image | absolute_url }}" />
+  {% else %}
+  <meta name="title" content="Maximo Ospital" />
+  <meta name="description" content="amateur programmer and designer, circa 2003." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maximoospital.xyz/" />
+  <meta property="og:title" content="Maximo Ospital" />
+  <meta property="og:description" content="amateur programmer and designer, circa 2003." />
+  <meta property="og:image" content="{{ "/assets/images/metatags.png" | relative_url }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://maximoospital.xyz/" />
+  <meta property="twitter:title" content="Maximo Ospital" />
+  <meta property="twitter:description" content="amateur programmer and designer, circa 2003." />
+  <meta property="twitter:image" content="{{ "/assets/images/metatags.png" | relative_url }}" />
+  {% endif %}
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/tuicss.css" | relative_url }}">
   <script src="{{ "/assets/tuicss.js" | relative_url }}"></script>

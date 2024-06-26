@@ -22,10 +22,12 @@
   <meta property="twitter:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:image" content="{{ page.image | absolute_url }}" />
   <meta property="twitter:image" content="{{ page.image | absolute_url }}" />
+  <meta property="author" content="Maximo Ospital" />
+  <meta property="date" content="{{ page.date | date_to_xmlschema }}" />
   {% else %}
   <meta name="title" content="Maximo Ospital" />
   <meta name="description" content="amateur programmer and designer, circa 2003." />
-
+  <meta property="author" content="Maximo Ospital" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maximoospital.xyz/" />

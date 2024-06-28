@@ -44,8 +44,8 @@
         {% if post.img %}
         <div class="tui-image-window">
           <fieldset class="tui-fieldset">
-              <legend><a href="{{ site.url }}{{ post.url | relative_url }}">{{ post.title }}.jpg</a></legend>
-              <a href="{{ site.url }}{{ post.url | relative_url }}"><img class="row__img" src="{{ post.img }}" alt="{{ post.title }}"></a>
+              <legend><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.jpg</a></legend>
+              <a href="{{ post.url | prepend: site.baseurl }}"><img class="row__img" src="{{ post.img }}" alt="{{ post.title }}"></a>
           </fieldset>
         </div>      
         {% endif %}

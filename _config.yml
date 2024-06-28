@@ -25,7 +25,9 @@ post_cat: Type
 #permalink: /post/:title
 
 permalinks:
+  default: /post/:title
   posts: /blog/:title
+  post: /blog/:title
   landings: /:title
 
 # post detail

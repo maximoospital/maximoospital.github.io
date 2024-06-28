@@ -18,14 +18,14 @@ encoding: "utf-8"
 
 # posts
 date_format: "%Y"
-post_title: Posts
+post_title: Blog
 post_date: Year
 post_cat: Type
 
 #permalink: /post/:title
 
 permalinks:
-  post: /post/:title
+  posts: /blog/:title
   landings: /:title
 
 # post detail

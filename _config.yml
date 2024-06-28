@@ -1,8 +1,8 @@
 # site
 title: Maximo Ospital
 baseurl: "/"
-url: "http://maximoospital.github.io"
-favicon: "/assets/sample/ico.png"
+url: "http://maximoospital.xyz"
+favicon: "/assets/ico.png"
 
 # bio
 header: Maximo Ospital

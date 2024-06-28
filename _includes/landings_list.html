@@ -1,5 +1,8 @@
+<!-- landings_list.html -->
 <ul>
-  {% for page in site.categories.landings %}
-      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-  {% endfor %}
+    {% for landing in site.pages %}
+      {% if landing.category == 'landings' %}
+        <li><a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a></li>
+      {% endif %}
+    {% endfor %}
 </ul>

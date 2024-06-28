@@ -22,11 +22,11 @@ post_title: Posts
 post_date: Year
 post_cat: Type
 
-# new category: landings
-landings_title: Landings
-landings_date: 
+#permalink: /post/:title
 
-permalink: /post/:title
+permalinks:
+  post: /post/:title
+  landings: /:title
 
 # post detail
 prev-next: true

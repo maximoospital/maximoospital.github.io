@@ -13,11 +13,18 @@ desc: |+
   really interested in both webapp and videogame development. <br>
   big fan of old-looking uis, in case you couldn't tell.
 
+timezone: "America/Argentina/Buenos_Aires"
+encoding: "utf-8"
+
 # posts
 date_format: "%Y"
 post_title: Projects
 post_date: Year
 post_cat: Type
+
+permalinks:
+  post: /post/:title
+  landings: /project/:title
 
 # post detail
 prev-next: true

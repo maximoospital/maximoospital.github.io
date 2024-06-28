@@ -3,6 +3,7 @@ layout: landing
 title: GitDumbExt
 category: Browser extension
 img: https://i.imgur.com/xy8A9sM.png
+year: 2024
 ---
 
 <head>

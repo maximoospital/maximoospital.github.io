@@ -18,9 +18,13 @@ encoding: "utf-8"
 
 # posts
 date_format: "%Y"
-post_title: Projects
+post_title: Posts
 post_date: Year
 post_cat: Type
+
+# new category: landings
+landings_title: Landings
+landings_date: 
 
 permalink: /post/:title
 

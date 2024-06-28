@@ -2,17 +2,10 @@
   <ul class="rows">
     <li class="row__cols">
       <div class="row__title">
-        {% if site.post_title %}
-          {{ site.post_title }}
+        {% if site.title %}
+          {{ site.title }}
         {% else %}
           Title
-        {% endif %}
-      </div>
-      <div class="row__cat">
-        {% if site.post_cat %}
-          {{ site.post_cat }}
-        {% else %}
-          Category
         {% endif %}
       </div>
     </li>
@@ -21,9 +14,6 @@
         <a href="{{ site.url }}{{ page.url | relative_url }}">
           <div class="row__title {% if include.uid == page.id %}row__active{% endif %}">
             {{ page.title }}
-          </div>
-          <div class="row__cat {% if include.uid == page.id %}row__active{% endif %}">
-            {{ page.category }}
           </div>
         </a>
 

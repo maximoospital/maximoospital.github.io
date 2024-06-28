@@ -4,18 +4,19 @@
         {% if landing.category == 'landings' %}
             {% if landing.github %}
                 <li class="row__cols">
-                    <a href="{{ landing.github | prepend: site.baseurl }}">Github</a>
+                    <a href="{{ landing.github | prepend: site.baseurl }}">{{ landing.title }}</a>
                 </li>
             {% endif %}
             {% if landing.app_url %}
                 <li class="row__cols">
-                    <a href="{{ landing.app_url | prepend: site.baseurl }}">App</a>
+                    <a href="{{ landing.app_url | prepend: site.baseurl }}">{{ landing.title }}</a>
                 </li>
             {% endif %}
-            {% else %}
-            <li class="row__cols">
-                <a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a>
-            </li>
+            {% if !landing.github and !landing.app_url %}
+                <li class="row__cols">
+                    <a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a>
+                </li>
+            {% endif %}
         {% endif %}
     {% endfor %}
 </ul>

@@ -22,7 +22,7 @@ post_title: Projects
 post_date: Year
 post_cat: Type
 
-permalink: /:title
+permalink: /post/:title
 
 # post detail
 prev-next: true

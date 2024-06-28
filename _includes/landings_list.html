@@ -6,13 +6,11 @@
                 <li class="row__cols">
                     <a href="{{ landing.github | prepend: site.baseurl }}">{{ landing.title }}</a>
                 </li>
-            {% endif %}
-            {% if landing.app_url & !landing.github %}
+            {% elif landing.app_url & !landing.github %}
                 <li class="row__cols">
                     <a href="{{ landing.app_url | prepend: site.baseurl }}">{{ landing.title }}</a>
                 </li>
-            {% endif %}
-            {% if !landing.github & !landing.app_url %}
+            {% elif !landing.github & !landing.app_url %}
                 <li class="row__cols">
                     <a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a>
                 </li>

@@ -2,19 +2,9 @@
 <ul class="rows">
     {% for landing in site.pages %}
         {% if landing.category == 'landings' %}
-            {% if landing.github & !landing.app_url %}
-                <li class="row__cols">
-                    <a href="{{ landing.github | prepend: site.baseurl }}">{{ landing.title }}</a>
-                </li>
-            {% elif landing.app_url & !landing.github %}
-                <li class="row__cols">
-                    <a href="{{ landing.app_url | prepend: site.baseurl }}">{{ landing.title }}</a>
-                </li>
-            {% elif !landing.github & !landing.app_url %}
-                <li class="row__cols">
-                    <a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a>
-                </li>
-            {% endif %}
+            <li class="row__cols">
+                <a href="{{ landing.github | prepend: site.baseurl }}">{{ landing.title }}</a>
+            </li>
         {% endif %}
     {% endfor %}
 </ul>

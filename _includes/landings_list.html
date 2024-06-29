@@ -3,7 +3,15 @@
     {% for landing in site.pages %}
         {% if landing.category == 'landings' %}
             <li class="row__cols">
-                <a href="{{ landing.github | prepend: site.baseurl }}">{{ landing.title }}</a>
+                {% if landing.github %}
+                    <a href="{{ landing.github }}">{{ landing.title }}</a>
+                {% elsif landing.app_url %}
+                    <a href="{{ landing.app_url }}">{{ landing.title }}</a>
+                {% elsif landing.github and landing.app_url %}
+                    <a href="google.com">{{ landing.title }}</a>
+                {% else %}
+                    <a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}</a>
+                {% endif %}
             </li>
         {% endif %}
     {% endfor %}

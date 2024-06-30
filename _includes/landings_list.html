@@ -1,6 +1,5 @@
 <!-- landings_list.html -->
 <ul class="rows">
-    {% for landing in site.pages %}
         {% if landing.category == 'landings' %}
             <li class="row__cols">
                 <div class="row__title">
@@ -10,6 +9,7 @@
                     Year
                 </div>
             </li>
+            {% for landing in site.pages %}
             <li class="row__post">
                 {% if landing.github %}
                     <a href="{{ landing.github }}">
@@ -38,6 +38,6 @@
                 </div>      
                 {% endif %}
               </li>
+              {% endfor %}
         {% endif %}
-    {% endfor %}
 </ul>

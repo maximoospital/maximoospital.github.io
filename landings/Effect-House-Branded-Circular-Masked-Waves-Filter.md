@@ -1,6 +1,6 @@
 ---
 layout: landing
-title:  Branded Circular Masked Waves Filter
+title:  Branded Circular Masked Waves Filter for Effect House
 author: Maximo Ospital
 category: AR Filter
 year: 2023

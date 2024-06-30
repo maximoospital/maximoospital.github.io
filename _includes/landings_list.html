@@ -7,6 +7,9 @@
         <div class="row__year">
             Year
         </div>
+        <div class="row__cat">
+            Type
+        </div>
     </li>
     {% for landing in site.pages %}
             <li class="row__post">
@@ -15,12 +18,15 @@
                 {% else %}
                     <a href="{{ landing.url | prepend: site.baseurl }}">
                 {% endif %}
-                  <div class="row__title">
-                    {{ landing.title }}
-                  </div>
-                  <div class="row__year">
-                      {{ landing.year }}
-                  </div>
+                    <div class="row__title">
+                        {{ landing.title }}
+                    </div>
+                    <div class="row__year">
+                        {{ landing.year }}
+                    </div>
+                    <div class="row__cat">
+                        {{ landing.category }}
+                    </div>
                 </a>
         
                 {% if landing.img %}

@@ -3,6 +3,7 @@ layout: post
 title:  Spark Studio Branded Randomizer Filter
 author: Maximo Ospital
 category: AR Filter
+year: 2023
 img: https://github.com/maximoospital/Spark-Studio-Branded-Randomizer-Filter/raw/main/images/demo.gif
 ---
 

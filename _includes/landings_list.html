@@ -19,13 +19,13 @@
                 {% else %}
                     <a href="{{ landing.url | prepend: site.baseurl }}">
                 {% endif %}
-                  <div class="row__title row__active">
+                  <div class="row__title {% if include.uid == landing.id %}row__active{% endif %}">
                     {{ landing.title }}
                   </div>
-                  <div class="row__year row__active">
+                  <div class="row__year {% if include.uid == landing.id %}row__active{% endif %}">
                       {{ landing.year }}
                   </div>
-                  <div class="row__type row__active">
+                  <div class="row__type {% if include.uid == landing.id %}row__active{% endif %}">
                     {{ landing.type }}
                   </div>
                 </a>
@@ -39,7 +39,7 @@
                     {% else %}
                         <legend><a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}.jpg</a></legend> 
                         <a href="{{ landing.url }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
-                    {% endif %
+                    {% endif %}
                   </fieldset>
                 </div>      
                 {% endif %}

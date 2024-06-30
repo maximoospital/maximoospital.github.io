@@ -88,12 +88,9 @@
       .tui-image-window {
         display: block;
         opacity: 1;
+        top: random(250) - random(250) + px;
+        left: random(500) + px;  
       }
-    }
-
-    .tui-image-window {
-      top: random(250) - random(250) + px;
-      left: random(500) + px;
     }
   }
 }

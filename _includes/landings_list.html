@@ -11,8 +11,7 @@
             Type
         </div>
     </li>
-    {% assign sorted_pages = site.pages | where:"category", "landings" | sort: "year" %}
-    {% for landing in sorted_pages %}
+    {% for landing in site.pages %}
             <li class="row__post">
                 {% if landing.github %}
                     <a href="{{ landing.github }}" target="_blank">

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Effect House Branded Waves Filter
+title:  Branded Waves Filter for Effect House
 author: Maximo Ospital
 category: AR Filter
 year: 2023

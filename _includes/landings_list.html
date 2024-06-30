@@ -19,13 +19,13 @@
                 {% else %}
                     <a href="{{ landing.url | prepend: site.baseurl }}">
                 {% endif %}
-                  <div class="row__title {% if include.uid == landing.id %}row__active{% endif %}">
+                  <div class="row__title row__active">
                     {{ landing.title }}
                   </div>
-                  <div class="row__year {% if include.uid == landing.id %}row__active{% endif %}">
+                  <div class="row__year row__active">
                       {{ landing.year }}
                   </div>
-                  <div class="row__type {% if include.uid == landing.id %}row__active{% endif %}">
+                  <div class="row__type row__active">
                     {{ landing.type }}
                   </div>
                 </a>

@@ -1,6 +1,5 @@
 <!-- landings_list.html -->
 <ul class="rows">
-        {% if landing.category == 'landings' %}
             <li class="row__cols">
                 <div class="row__title">
                     Title
@@ -9,35 +8,34 @@
                     Year
                 </div>
             </li>
-            {% for landing in site.pages %}
-            <li class="row__post">
-                {% if landing.github %}
-                    <a href="{{ landing.github }}">
-                {% else %}
-                    <a href="{{ landing.url | prepend: site.baseurl }}">
-                {% endif %}
-                  <div class="row__title">
-                    {{ landing.title }}
-                  </div>
-                  <div class="row__year">
-                      {{ landing.year }}
-                  </div>
-                </a>
-        
-                {% if landing.img %}
-                <div class="tui-image-window">
-                  <fieldset class="tui-fieldset">
+            {% for landing in site.landings %}
+                <li class="row__post">
                     {% if landing.github %}
-                        <legend><a href="{{ landing.github }}">{{ landing.title }}.jpg</a></legend>     
-                        <a href="{{ landing.github }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
+                        <a href="{{ landing.github }}">
                     {% else %}
-                        <legend><a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}.jpg</a></legend> 
-                        <a href="{{ landing.url }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
+                        <a href="{{ landing.url | prepend: site.baseurl }}">
                     {% endif %}
-                  </fieldset>
-                </div>      
-                {% endif %}
-              </li>
+                    <div class="row__title">
+                        {{ landing.title }}
+                    </div>
+                    <div class="row__year">
+                        {{ landing.year }}
+                    </div>
+                    </a>
+            
+                    {% if landing.img %}
+                    <div class="tui-image-window">
+                    <fieldset class="tui-fieldset">
+                        {% if landing.github %}
+                            <legend><a href="{{ landing.github }}">{{ landing.title }}.jpg</a></legend>     
+                            <a href="{{ landing.github }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
+                        {% else %}
+                            <legend><a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}.jpg</a></legend> 
+                            <a href="{{ landing.url }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
+                        {% endif %}
+                    </fieldset>
+                    </div>      
+                    {% endif %}
+                </li>
             {% endfor %}
-        {% endif %}
 </ul>

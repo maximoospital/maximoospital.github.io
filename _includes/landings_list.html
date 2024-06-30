@@ -16,7 +16,7 @@
                 {% if landing.github %}
                     <a href="{{ landing.github }}" target="_blank">
                 {% else %}
-                    <a href="{{ landing.url | prepend: site.baseurl }}">
+                    <a href="{{ landing.url | prepend: site.baseurl }}" target="_blank">
                 {% endif %}
                     <div class="row__title">
                         {{ landing.title }}
@@ -36,8 +36,8 @@
                         <legend><a href="{{ landing.github }}" target="_blank">{{ landing.title }}.jpg</a></legend>     
                         <a href="{{ landing.github }}" target="_blank"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
                     {% else %}
-                        <legend><a href="{{ landing.url | prepend: site.baseurl }}">{{ landing.title }}.jpg</a></legend> 
-                        <a href="{{ landing.url }}"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
+                        <legend><a href="{{ landing.url | prepend: site.baseurl }}" target="_blank">{{ landing.title }}.jpg</a></legend> 
+                        <a href="{{ landing.url }}" target="_blank"><img class="row__img" src="{{ landing.img }}" alt="{{ landing.title }}"></a>
                     {% endif %}
                   </fieldset>
                 </div>      

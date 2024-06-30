@@ -88,9 +88,57 @@
       .tui-image-window {
         display: block;
         opacity: 1;
-        top: random(250) - random(250) + px;
-        left: random(500) + px;  
       }
+    }
+
+    &:nth-child(2n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(3n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(4n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(5n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(6n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(7n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(8n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(9n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(10n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
+    }
+
+    &:nth-child(11n) .tui-image-window {
+      top: random(250) - random(250) + px;
+      left: random(500) + px;
     }
   }
 }

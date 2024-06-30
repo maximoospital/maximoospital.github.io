@@ -9,9 +9,6 @@
                 <div class="row__year">
                     Year
                 </div>
-                <div class="row__type">
-                    Category
-                </div>
             </li>
             <li class="row__post">
                 {% if landing.github %}
@@ -19,14 +16,11 @@
                 {% else %}
                     <a href="{{ landing.url | prepend: site.baseurl }}">
                 {% endif %}
-                  <div class="row__title {% if include.uid == landing.id %}row__active{% endif %}">
+                  <div class="row__title">
                     {{ landing.title }}
                   </div>
-                  <div class="row__year {% if include.uid == landing.id %}row__active{% endif %}">
+                  <div class="row__year">
                       {{ landing.year }}
-                  </div>
-                  <div class="row__type {% if include.uid == landing.id %}row__active{% endif %}">
-                    {{ landing.type }}
                   </div>
                 </a>
         

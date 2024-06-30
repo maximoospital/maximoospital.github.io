@@ -1,6 +1,6 @@
 ---
 layout: landing
-title:  Effect House Branded Masked Waves Filter
+title:  Branded Masked Waves Filter for Effect House
 author: Maximo Ospital
 category: AR Filter
 year: 2023

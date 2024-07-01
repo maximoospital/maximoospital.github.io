@@ -1670,6 +1670,11 @@ input[type=button] {
   stroke-dashoffset: 100%;
   fill: none; /* Remove fill to only show the stroke */
   animation: typewriter 5s forwards; /* Adjust time as needed */
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.sitio-logo:hover path {
+  stroke-dashoffset: 0; /* Reveals the stroke as a continuous line on hover */
 }
 
 

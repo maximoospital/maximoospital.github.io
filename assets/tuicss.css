@@ -1658,7 +1658,7 @@ input[type=button] {
     fill: rgba(255, 255, 255, 0); /* Start with transparent fill */
   }
   100% {
-    stroke-dashoffset: 0%;
+    stroke-dashoffset: 100%;
     fill: white; /* End with opaque fill */
   }
 }
@@ -1670,7 +1670,16 @@ input[type=button] {
   stroke-dashoffset: 100%;
   fill: white; /* Remove fill to only show the stroke */
   animation: typewriter 3s forwards; /* Adjust time as needed */
-  transition: fill 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sitio-logo:hover path {
+  fill: rgba(255, 255, 255, 0);
+  stroke-dashoffset: 0;
+}
+
+.logo-sitio:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .tui-screen-640-480 {

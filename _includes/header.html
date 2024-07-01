@@ -505,7 +505,25 @@
             <path class="cls-1" d="M1341.25,133.28v-1.52h7.09v-11.26h1.52v12.78h-8.6ZM1341.25,130.24v-1.52h4.05v-8.22h1.52v9.74h-5.57Z"/>
           </g>
         </g>
+        <defs>
+          <filter id="spotlight">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="in" result="composite"/>
+          </filter>
+        </defs>
       </svg>
+      <script>
+        document.querySelector('.sitio-logo').addEventListener('mousemove', function(e) {
+          // Calculate the mouse position relative to the SVG element
+          var rect = e.target.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+
+          // Update the filter attributes or mask position here
+          // This part is more complex and depends on how you've set up your SVG and filter
+          // You might need to dynamically adjust the filter's parameters or the mask's position
+        });
+      </script>
 	  </a>
   </div>
   <div class="bio__desc">{{ site.desc }}</div>

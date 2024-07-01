@@ -1671,6 +1671,11 @@ input[type=button] {
   fill: white; /* Remove fill to only show the stroke */
   animation: typewriter 3s forwards; /* Adjust time as needed */
   transition: all 0.5s ease;
+  pointer-events: all;
+}
+
+svg {
+  pointer-events: all;
 }
 
 .sitio-logo:hover path {

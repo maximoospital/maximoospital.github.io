@@ -1645,13 +1645,21 @@ input[type=button] {
 }
 
 @keyframes typewriter {
-  from {
+  0% {
     stroke-dashoffset: 100%;
-    filL: none;
+    fill: none;
   }
-  to {
+  50% {
     stroke-dashoffset: 0;
-    fill: white;
+    fill: none;
+  }
+  50.1% {
+    stroke-dashoffset: 0;
+    fill: rgba(255, 255, 255, 0); /* Start with transparent fill */
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: white; /* End with opaque fill */
   }
 }
 

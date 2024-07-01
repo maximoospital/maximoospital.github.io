@@ -20,7 +20,7 @@
                 {% endif %}
                     <div class="row__title">
                         {% assign title_parts = landing.title | split: " - " %}
-                        <b>{{ title_parts[0] }}</b>{% if title_parts[1] %} - {{ title_parts[1] }}{% endif %}                    
+                        <b>{{ title_parts[0] }}</b>{% if title_parts[1] %} - <i>{{ title_parts[1] }}</i>{% endif %}                    
                     </div>
                     <div class="row__date">
                         {{ landing.year }}

@@ -20,7 +20,7 @@ encoding: "utf-8"
 date_format: "%Y"
 post_title: Blog
 post_date: Year
-post_cat: Type
+post_cat: Category
 
 #permalink: /post/:title
 defaults:

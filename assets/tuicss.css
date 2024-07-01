@@ -1669,7 +1669,7 @@ input[type=button] {
   stroke-dasharray: 100%;
   stroke-dashoffset: 100%;
   fill: white; /* Remove fill to only show the stroke */
-  animation: typewriter 3s forwards; /* Adjust time as needed */
+  animation: typewriter 2s forwards; /* Adjust time as needed */
   transition: all 1s ease;
   pointer-events: all;
 }

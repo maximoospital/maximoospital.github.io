@@ -1644,6 +1644,24 @@ input[type=button] {
   fill: white;
 }
 
+@keyframes typewriter {
+  from {
+    stroke-dashoffset: 100%;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.sitio-logo path {
+  stroke: #000; /* Stroke color */
+  stroke-width: 1; /* Stroke width */
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  fill: none; /* Remove fill to only show the stroke */
+  animation: typewriter 5s forwards; /* Adjust time as needed */
+}
+
 
 .tui-screen-640-480 {
   width: 640px;

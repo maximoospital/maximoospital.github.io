@@ -1647,9 +1647,11 @@ input[type=button] {
 @keyframes typewriter {
   from {
     stroke-dashoffset: 100%;
+    filL: none;
   }
   to {
     stroke-dashoffset: 0;
+    fill: white;
   }
 }
 

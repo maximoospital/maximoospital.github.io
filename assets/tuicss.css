@@ -1668,8 +1668,9 @@ input[type=button] {
   stroke-width: 1; /* Stroke width */
   stroke-dasharray: 100%;
   stroke-dashoffset: 100%;
-  fill: none; /* Remove fill to only show the stroke */
+  fill: white; /* Remove fill to only show the stroke */
   animation: typewriter 3s forwards; /* Adjust time as needed */
+  transition: fill 0.5s ease;
 }
 
 .tui-screen-640-480 {

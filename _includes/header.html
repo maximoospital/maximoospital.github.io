@@ -2,6 +2,12 @@
   <div class="bio__header">
   	<a href="{{ site.url }}{{ "/" | relative_url }}">
       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1353.9 141.5" class="sitio-logo">
+        <defs>
+          <mask id="mask" x="0" y="0" width="100%" height="100%" >
+            <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+            <circle id="mask-circle" cx="-100" cy="-100" r="50" fill="black"/>
+          </mask>
+        </defs>      
         <g id="Layer_1-2" data-name="Layer 1">
           <g>
             <path class="cls-1" d="M0,20.5h12.65v21H0v-21Z"/>
@@ -505,23 +511,16 @@
             <path class="cls-1" d="M1341.25,133.28v-1.52h7.09v-11.26h1.52v12.78h-8.6ZM1341.25,130.24v-1.52h4.05v-8.22h1.52v9.74h-5.57Z"/>
           </g>
         </g>
-        <defs>
-          <filter id="spotlight">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur"/>
-            <feComposite in="SourceGraphic" in2="blur" operator="in" result="composite"/>
-          </filter>
-        </defs>
       </svg>
       <script>
-        document.querySelector('.sitio-logo').addEventListener('mousemove', function(e) {
-          // Calculate the mouse position relative to the SVG element
-          var rect = e.target.getBoundingClientRect();
-          var x = e.clientX - rect.left;
-          var y = e.clientY - rect.top;
-
-          // Update the filter attributes or mask position here
-          // This part is more complex and depends on how you've set up your SVG and filter
-          // You might need to dynamically adjust the filter's parameters or the mask's position
+        document.querySelector('svg').addEventListener('mousemove', function(e) {
+          var rect = this.getBoundingClientRect();
+          var x = e.clientX - rect.left; // x position within the element.
+          var y = e.clientY - rect.top;  // y position within the element.
+          
+          var maskCircle = document.getElementById('mask-circle');
+          maskCircle.setAttribute('cx', x);
+          maskCircle.setAttribute('cy', y);
         });
       </script>
 	  </a>

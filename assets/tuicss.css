@@ -1642,7 +1642,6 @@ input[type=button] {
 
 .sitio-logo {
   fill: white;
-  transition: all 0.5s ease;
 }
 
 @keyframes typewriter {
@@ -1671,7 +1670,7 @@ input[type=button] {
   stroke-dashoffset: 100%;
   fill: white; /* Remove fill to only show the stroke */
   animation: typewriter 3s forwards; /* Adjust time as needed */
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   pointer-events: all;
 }
 
@@ -1680,8 +1679,7 @@ svg {
 }
 
 .sitio-logo:hover path {
-  fill: none !important;
-  transition: all 0.5s ease;
+  fill: rgba(255, 255, 255, 0) !important;
   stroke-dashoffset: 0 !important;
 }
 

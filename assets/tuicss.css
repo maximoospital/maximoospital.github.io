@@ -1678,9 +1678,10 @@ svg {
   pointer-events: all;
 }
 
-.sitio-logo:hover path {
+.sitio-logo path:hover {
   fill: rgba(255, 255, 255, 0) !important;
   stroke-dashoffset: 0 !important;
+  transition: stroke-dashoffset 1s ease, fill 1s ease;
 }
 
 .logo-sitio:hover {

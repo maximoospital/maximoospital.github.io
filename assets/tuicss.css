@@ -1688,20 +1688,6 @@ svg {
   background-color: transparent;
 }
 
-.overlay {
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes slideAway {
-  to {
-    transform: translateY(100%);
-  }
-}
-
-
 .tui-screen-640-480 {
   width: 640px;
   height: 480px;

@@ -1,31 +1,12 @@
 ---
 layout: default
 ---
-
-
-<div id="reveal-animation">
-    <div class="tui-main-window">
-        <fieldset class="tui-fieldset tui-border-double">
-            <legend>maximoospital.xyz</legend>
-            {% include header.html %}
-            {% include landings_list.html %}
-            {% include posts_list.html %}    
-        </fieldset>
-    </div>
+<div class="tui-main-window">
+    <fieldset class="tui-fieldset tui-border-double">
+        <legend>maximoospital.xyz</legend>
+        {% include header.html %}
+        {% include landings_list.html %}
+        {% include posts_list.html %}    
+    </fieldset>
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const container = document.getElementById('reveal-animation');
-  const lines = container.children; // Assuming each child is a "line"
-  const delayIncrement = 0.5; // Delay increment in seconds
-
-  for (let i = 0; i < lines.length; i++) {
-    const overlay = document.createElement('div');
-    overlay.classList.add('overlay');
-    overlay.style.animation = `slideAway 1s ease ${i * delayIncrement}s forwards`;
-    lines[i].style.position = 'relative';
-    lines[i].appendChild(overlay);
-  }
-});
-</script>

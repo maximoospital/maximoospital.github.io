@@ -2779,10 +2779,11 @@ svg {
 }
 
 .bio__desc::after {
-  content: "";
+  content: ".";
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: inline-block;
   background-color: white;
+  color: black;
   margin-left: -6px;
   vertical-align: top;
   width: 6px;

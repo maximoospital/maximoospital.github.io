@@ -12,17 +12,6 @@
   {% endif %}
 
   {% if page.title %}
-  <meta name="title" content="{{ page.title | escape }}" />
-  <meta property="og:title" content="{{ page.title | escape }}" />
-  <meta property="twitter:title" content="{{ page.title | escape }}" />
-  <meta name="description" content="{{ site.title | escape }}" />
-  <meta property="og:description" content="{{ site.title | escape }}" />
-  <meta property="twitter:description" content="{{ site.title | escape }}" />
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <meta property="twitter:url" content="{{ page.url | absolute_url }}" />
-  <meta property="og:image" content="{{ page.image | absolute_url }}" />
-  <meta property="twitter:image" content="{{ page.image | absolute_url }}" />
-  <meta property="author" content="Maximo Ospital" />
   <meta property="date" content="{{ page.date | date_to_xmlschema }}" />
   {% else %}
   <meta name="title" content="Maximo Ospital" />

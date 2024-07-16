@@ -2801,13 +2801,31 @@ svg {
 }
 
 @-webkit-keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+  0% { 
+    background-color: white;
+    color: black; 
+  }
+  50% { 
+    background-color: black;
+    color: white; 
+  }
+  100% { 
+    background-color: white;
+    color: black; 
+  }
 }
 
 @keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+  0% { 
+    background-color: white;
+    color: black; 
+  }
+  50% { 
+    background-color: black;
+    color: white; 
+  }
+  100% { 
+    background-color: white;
+    color: black; 
+  }
 }

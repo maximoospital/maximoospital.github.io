@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Maximoospital.xyz - this website!
+title: maximoospital.github.io - this website!
 category: Jekyll-based Website
 img: https://i.imgur.com/P087fqP.png
 year: 2024

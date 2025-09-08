@@ -11,4 +11,4 @@ made this blog section for devlogs.
 not much to say, just testing it!!!
 
 ------
-[![Logo](https://i.imgur.com/XlF4lM5.png)](https://maximoospital.xyz) 
+[![Logo](https://i.imgur.com/XlF4lM5.png)](https://maximoospital.github.io) 

@@ -1,10 +1,10 @@
 <br/>
 <p align="center">
-  <a href="https://maximoospital.xyz">
+  <a href="https://maximoospital.github.io">
     <img src="https://i.imgur.com/DEcVin9.png" alt="Logo" width="670" height="90">
   </a>
 
-  <h3 align="center">maximoospital.xyz</h3> 
+  <h3 align="center">maximoospital.github.io</h3> 
   <h5 align="center">Maximo Ospital, 2024</h5>
 </p>
 
